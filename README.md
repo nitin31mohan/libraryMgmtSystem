@@ -1,8 +1,8 @@
-#Library Management System Command line tool.
+Library Management System Command line tool.
 
-##created using Python3.6 alongwith libraries such as pandas, datetime, ast, and argparse.
+(created using Python3.6 alongwith libraries such as pandas, datetime, ast, and argparse.)
 
-###Can be operated using the CLI or interface files included herewith.
+Can be operated using the CLI or interface files included herewith.
 
 
 The project makes use of 2 CSV files as basis for reference and record keeping with regards to the members registered in the system, as well as the books that are available for procurement by said members.  
