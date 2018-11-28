@@ -7,7 +7,7 @@ date_index = 1
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog="libms")
-    parser.add_argument("libms", help="libms options[-aM|-aB|-A|-R|-sI|-sT|-sA|-lAM|-lB]", nargs=1)
+    parser.add_argument("libms", help="libms options[-aM|-aB|-A|-R|-sI|-sT|-sA|-lAM|-lAB]", nargs=1)
     			#aM = add_member()
     			#aB = add_book() ...to DB
     			#A = issue_book()
@@ -23,8 +23,8 @@ if __name__ == '__main__':
     parser.add_argument("-sT", help="'libms -sT' asks for book\'s Title and searches for it in the system", action = "store_true")
     parser.add_argument("-sA", help="'libms -sA' asks for book\'s authorName and searches for it in the system", action = "store_true")
     parser.add_argument("-lAM", help="'libms -lAM' lists ALL members in the system and the books allotted to them", action = "store_true")
-    parser.add_argument("-lB", help="'libms -lB' lists ALL books in the system and their details", action = "store_true")
-
+    parser.add_argument("-lAB", help="'libms -lB' lists ALL books in the system and their details", action = "store_true")
+    
     args = parser.parse_args()
     if args.aM:
     	add_member()
@@ -42,5 +42,5 @@ if __name__ == '__main__':
     	search_book('a', book_ISBN)			#'a' implies 'search-by-authorName'
     elif args.lAM:
     	member_issuing_details()
-    elif args.lB:
+    elif args.lAB:
     	view_all_book_details()

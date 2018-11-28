@@ -78,6 +78,9 @@ def main():
         elif choice == 7:
             view_all_book_details()
             main_menu()
+        elif choice == 8:
+            remove_book()
+            main_menu()
         else:
             print('Invalid choice, Enter choice again.')
             main_menu()
